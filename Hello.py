@@ -42,7 +42,7 @@ def run():
         st.selectbox("検索対象",["Fターム","FI","IPC","CPC","USPC"])
     
     if st.button("検索"):
-        st.warning("１回目の実行は１分ほどかかります.")
+        st.sidebar.warning("１回目の実行は１分ほどかかります.")
 
         
 
