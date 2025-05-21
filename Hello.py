@@ -50,7 +50,7 @@ def run():
     API_URL = st.secrets["CHAT_URL"]
     HEADERS = {"Content-Type": "application/json"}
 
-    st.title("Zuva Chat Streaming Demo 🚀")
+    st.title("Zuva Chat Streaming🚀")
     st.caption("臨時：Zuvaチャットを試せます")
 
     # セッションステートでAPI応答を保持
@@ -63,7 +63,6 @@ def run():
     col1, col2 = st.columns(2)  # col2 は現状レイアウト上定義されていますが、主たる表示はcol1の下です
 
     with col1:
-        st.subheader("リクエスト設定")
         question_default = "宇宙で使える放熱技術を保有している企業を教えて"
         question = st.text_area(
             "質問を入力してください:", value=question_default, height=100)
